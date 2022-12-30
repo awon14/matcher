@@ -1,0 +1,57 @@
+NLP Statements,Commands
+Cursor to start of line ,CTRL A
+Cursor the end of line ,CTRL E
+Delete left of the cursor ,CTRL U
+Delete right of the cursor ,CTRL K
+Delete word on the left ,CTRL W 
+"Paste (after CTRL U,K or W) ",CTRL Y
+auto completion of file or command ,TAB
+reverse search history ,CTRL R 
+repeat last command,!! 
+stops the current command (resume with fg in foreground or bg in background),CTRL Z
+"show content of file (less, more) ",cat <fileName> 
+from the top -n <#oflines> <fileName> ,head
+from the bottom -n <#oflines> <fileName> ,tail
+create new folder ,mkdir
+list all files and folders ,ls -a 
+list files in folder ,ls <folderName>
+"Detailed list, Human readable",ls -lh 
+list jpeg files only ,ls -l *.jpg
+Result for file only,ls -lh <fileName> 
+change directory,cd <folderName>
+" Disk usage of folders, human readable ",du -h
+only show disc usage of folders ,du -sh
+print working directory ,pwd
+shows manual (RTFM) ,man <command>
+copy and rename a file ,cp image.jpg newimage.jpg
+copy to folder ,cp image.jpg <folderName>/
+copy and rename a folder ,cp -R stuff otherStuff
+copy all of *<file type> to folder,cp *.txt stuff/
+move file to a folder ,mv file.txt Documents/ 
+move folder in folder ,mv <folderName> <folderName2> 
+rename file,mv filename.txt filename2.txt
+move folder up in hierarchy,mv <folderName>/ .. 
+delete file (s) ,rm <fileName> ..
+ask for confirmation each file ,rm -i <fileName> 
+force deletion of a file,rm -f <fileName>
+delete folder ,rm -r <foldername>/
+create or update a file ,touch <fileName> 
+physical link ,ln file1 file2 
+symbolic link ,ln -s file1 file2 =
+search for text in file ,grep <someText> <fileName>
+ search for file names with occurrence of the text ,grep -r <text> <folderName>/ 
+"search start of lines
+with the word text",grep -E ^<text> <fileName> =
+sort the content of files ,sort
+sort alphabetically ,sort <fileName> 
+creates new user,sudo adduser <username>
+change a user's password ,sudo passwd <AccountName>
+delete an account ,sudo deluser <AccountName>
+change the owner of a file ,chown
+modify user access/permission – simple way ,"chmod u = user
+g = group
+o = other"
+kill a process,kill
+violent kill,kill -9 <PID> 
+kill multiple process',killall
+kuch bhi,fatima custom
